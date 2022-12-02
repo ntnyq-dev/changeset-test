@@ -1,0 +1,39 @@
+{
+  "name": "changeset-test",
+  "version": "0.0.0",
+  "private": true,
+  "packageManager": "pnpm@7.17.1",
+  "scripts": {
+    "dev": "pnpm run --filter=\"./packages/*\" --parallel dev",
+    "build": "turbo run build --filter=\"./packages/*\"",
+    "clean": "rm -fr packages/*/dist packages/*/.turbo",
+    "lint": "eslint .",
+    "test": "vitest",
+    "typecheck": "tsc --noEmit -p tsconfig.lib.json",
+    "release": "changeset publish"
+  },
+  "devDependencies": {
+    "@changesets/changelog-github": "^0.4.7",
+    "@changesets/cli": "^2.25.2",
+    "@ntnyq/eslint-config": "^1.1.0",
+    "@ntnyq/prettier-config": "^1.1.0",
+    "@types/node": "^18.11.10",
+    "@vitest/coverage-c8": "^0.25.3",
+    "eslint": "^8.28.0",
+    "nano-staged": "^0.8.0",
+    "npm-run-all": "^4.1.5",
+    "prettier": "^2.8.0",
+    "tsup": "^6.5.0",
+    "tsx": "^3.12.1",
+    "turbo": "^1.6.3",
+    "typescript": "^4.9.3",
+    "vitest": "^0.25.3"
+  },
+  "nano-staged": {
+    "*.{js,ts,json,yml,yaml,md}": "eslint --fix"
+  },
+  "prettier": "@ntnyq/prettier-config",
+  "engines": {
+    "node": ">=14.19.0"
+  }
+}

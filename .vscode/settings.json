@@ -1,0 +1,22 @@
+{
+  "eslint.validate": [
+    "javascript",
+    "typescript",
+    "javascriptreact",
+    "typescriptreact",
+    "vue",
+    "yaml",
+    "html",
+    "markdown",
+    "json",
+    "jsonc",
+    "json5"
+  ],
+  "[markdown]": {
+    "editor.formatOnSave": true
+  },
+  "cSpell.words": [
+    "pnpm",
+    "tsup"
+  ]
+}
