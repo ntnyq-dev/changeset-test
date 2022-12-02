@@ -6,6 +6,9 @@
   "scripts": {
     "dev": "pnpm run --filter=\"./packages/*\" --parallel dev",
     "build": "turbo run build --filter=\"./packages/*\"",
+    "docs:dev": "pnpm run -C ./docs dev",
+    "docs:serve": "pnpm run -C ./docs serve",
+    "docs:build": "turbo run build --filter docs",
     "clean": "rm -fr packages/*/dist packages/*/.turbo",
     "lint": "eslint .",
     "test": "vitest",
