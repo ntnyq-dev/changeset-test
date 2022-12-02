@@ -16,7 +16,10 @@
     "dist"
   ],
   "scripts": {
-    "build": "tsup",
+    "build": "tsup && tsx ../../scripts/postbuild.mts",
     "dev": "DEV=1 tsup"
+  },
+  "dependencies": {
+    "@goy/module-main": "workspace:~"
   }
 }

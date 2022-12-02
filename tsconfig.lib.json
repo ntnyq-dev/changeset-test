@@ -19,7 +19,11 @@
     ],
     "forceConsistentCasingInFileNames": true,
     "skipLibCheck": true,
-    "paths": {}
+    "paths": {
+      "@goy/module-main": [
+        "packages/main/src"
+      ]
+    }
   },
   "include": [
     "packages",
