@@ -1,2 +1,4 @@
 
-export const name = `main`
+export const name = [
+  `main`,
+]
